@@ -1,5 +1,5 @@
 # SG-HDB
-Calculate what is the maximumprice of housing flat you can afford in Singapore!
+Calculate what is the maximum price of housing flat you can afford in Singapore!
 
 - If you are taking a bank loan - run python file: BankLoanProperty.py
 - If you are taking a HDB loan - run python file: HDBLoanProperty.py
