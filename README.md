@@ -41,7 +41,7 @@ optimal maximum HDB price.
 
 
 #### Sources:
-- Linear programming library used: puLp [source](https://pythonhosted.org/PuLP/)
+- Linear programming library used: puLp [source](https://pythonhosted.org/PuLP/) (Used to find a good initial solution, despite non-linear constraints)
 - [Singapore HDB policy](http://www.hdb.gov.sg/cs/infoweb/residential/buying-a-flat/new/hdb-flat)
 
 
