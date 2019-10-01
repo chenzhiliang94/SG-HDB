@@ -92,7 +92,7 @@ for x in range(9,17):
         nb3 = nb3
     else:
         nb3 = nb3 + int(amountDic[x])
-    
+
 
 def calculateStampDuty(propertyPrice):
     if (propertyPrice <= 180000):
@@ -301,6 +301,8 @@ if (initialCash < (maximumHDBLoan/16)):
 else: #case 3 i.e cash can fulfill 5%
     fivePercentCash = maximumHDBLoan/16
     if (initialCPF + (initialCash - fivePercentCash) >= 3 * fivePercentCash and initialCPF >= 3 * fivePercentCash):
+        
+        # initialise solution using the optimal solution from a linear program, without stamp duty
         excessCash = initialCash - fivePercentCash   #case 3 i.e cash can fulfill 5% and 15% is pure CPF - excess cash and excess CPF
         usedCPF = (3 * fivePercentCash) #150000
         excessCPF = initialCPF - usedCPF
@@ -327,6 +329,8 @@ else: #case 3 i.e cash can fulfill 5%
         usedCPF = usedCPF + addedCPF      
         newPropertyPrice = fivePercentCash * 20
         currentStampDuty = calculateStampDuty(newPropertyPrice)
+        
+        
         if (excessCPFnotUsed >= currentStampDuty): #working
             print("cash input: " + str(Cashinput))
             print("CPF input: " + str(CPFinput))
