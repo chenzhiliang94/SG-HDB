@@ -25,7 +25,6 @@ def getCPFToTopUp(excessCPFUnused, initialPP, stampDuty):
     CPFToBeChanneled = 0.5 * excessCPFUnused
     difference = abs((calculateStampDuty(initialPP + CPFToBeChanneled) - stampDuty) - (excessCPFUnused - CPFToBeChanneled))
     while (difference > ERROR_MARGIN):
-        print(CPFToBeChanneled)
         CPFToBeChanneled = CPFToBeChanneled + 1
         difference = abs((calculateStampDuty(initialPP + CPFToBeChanneled) - stampDuty) - (excessCPFUnused - CPFToBeChanneled))
     return CPFToBeChanneled

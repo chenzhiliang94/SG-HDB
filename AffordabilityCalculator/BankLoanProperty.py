@@ -3,7 +3,7 @@ Created on 19 Jun 2017
 
 @author: zhi liang & victor
 '''
-from src.findMaxLoan import findMaxLoan
+from findMaxLoan import findMaxLoan
 from pulp import LpProblem, LpVariable, LpConstraint, LpMaximize, LpMinimize, value
 from difflib import Differ
 
